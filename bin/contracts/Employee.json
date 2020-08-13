@@ -1,0 +1,3020 @@
+{
+    "contractName": "Employee",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "employedIndex",
+                    "type": "uint256"
+                }
+            ],
+            "name": "buyEmployed",
+            "outputs": [],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getRefundableEther",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "workeds",
+            "outputs": [
+                {
+                    "name": "loyaltyPoints",
+                    "type": "uint256"
+                },
+                {
+                    "name": "totalEmployeds",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "employeds",
+            "outputs": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "salary",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "workedsTotalEmployeds",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "totalEmployeds",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getEmployeeBalance",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "workedsEmployeds",
+            "outputs": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "salary",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "redeemLoyaltyPoints",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "worked",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "salary",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "employed",
+                    "type": "string"
+                }
+            ],
+            "name": "EmployedPurchased",
+            "type": "event"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"employedIndex\",\"type\":\"uint256\"}],\"name\":\"buyEmployed\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getRefundableEther\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"workeds\",\"outputs\":[{\"name\":\"loyaltyPoints\",\"type\":\"uint256\"},{\"name\":\"totalEmployeds\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"employeds\",\"outputs\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"salary\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"workedsTotalEmployeds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalEmployeds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getEmployeeBalance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"workedsEmployeds\",\"outputs\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"salary\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"redeemLoyaltyPoints\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"worked\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"salary\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"employed\",\"type\":\"string\"}],\"name\":\"EmployedPurchased\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"c:/Users/hp/Desktop/Prueba/SmartPymes/contracts/Employee.sol\":\"Employee\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/hp/Desktop/Prueba/SmartPymes/contracts/Employee.sol\":{\"keccak256\":\"0x1cc574fce138f4c19b4eb7b78504886658561cf71b8ab40f601e025328c7703b\",\"urls\":[\"bzzr://0fc228dc7da1339f3f8859f402a3c61000e1407f3ab44535a82a1afe45d2f63c\"]}},\"version\":1}",
+    "bytecode": "60806040526706f05b59d3b2000060015534801561001c57600080fd5b5060008054600160a060020a031916331781556040805160808101825260069181019182527f4a617669657200000000000000000000000000000000000000000000000000006060820152908152673782dace9d900000602080830191909152600280546001810180835594829052835180519190920260008051602061097983398151915201926100b29284929101906101e5565b506020918201516001918201556040805160808101825260069181019182527f4d696c746f6e000000000000000000000000000000000000000000000000000060608201529081526729a2241af62c0000818401526002805492830180825560008290528251805191965092949390910260008051602061097983398151915201926101429284929101906101e5565b506020918201516001918201556040805160808101825260049181019182527f4a6f73650000000000000000000000000000000000000000000000000000000060608201529081526729a2241af62c0000818401526002805492830180825560008290528251805191965092949390910260008051602061097983398151915201926101d29284929101906101e5565b5060208201518160010155505050610280565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061022657805160ff1916838001178555610253565b82800160010185558215610253579182015b82811115610253578251825591602001919060010190610238565b5061025f929150610263565b5090565b61027d91905b8082111561025f5760008155600101610269565b90565b6106ea8061028f6000396000f3006080604052600436106100a25763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041662574ae681146100a75780632411ff73146100b45780634b6c1bd1146100db57806353a774e9146101225780635f35cdfb146101b957806367a0b4d0146101e75780638245163b146101fc5780638da5cb5b14610211578063c31872e31461024f578063f997114f14610280575b600080fd5b6100b2600435610295565b005b3480156100c057600080fd5b506100c961040e565b60408051918252519081900360200190f35b3480156100e757600080fd5b5061010973ffffffffffffffffffffffffffffffffffffffff60043516610426565b6040805192835260208301919091528051918290030190f35b34801561012e57600080fd5b5061013a60043561043f565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561017d578181015183820152602001610165565b50505050905090810190601f1680156101aa5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156101c557600080fd5b506100c973ffffffffffffffffffffffffffffffffffffffff600435166104f3565b3480156101f357600080fd5b506100c9610505565b34801561020857600080fd5b506100c961050b565b34801561021d57600080fd5b5061022661053d565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b34801561025b57600080fd5b5061013a73ffffffffffffffffffffffffffffffffffffffff60043516602435610559565b34801561028c57600080fd5b506100b26105df565b6000806002838154811015156102a757fe5b906000526020600020906002020191508160010154341415156102c957600080fd5b503360009081526003602090815260408083208054600501815560018082018054820190556004845291842080548084018083559186529390942085549194938693600291820290920192610331928492869291821615610100026000190190911604610629565b5060019182015490820155336000818152600560209081526040918290208054850190558684015482518181529182018381528854600296811615610100026000190116959095049282018390529294507fc1b8c3c208bbcc7aa38020fcc9c1d03e3b1950d2e9a0d782439ee832a7f593499387926060830190849080156103fa5780601f106103cf576101008083540402835291602001916103fa565b820191906000526020600020905b8154815290600101906020018083116103dd57829003601f168201915b5050935050505060405180910390a2505050565b33600090815260036020526040902054600154025b90565b6003602052600090815260409020805460019091015482565b600280548290811061044d57fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909350918391908301828280156104e35780601f106104b8576101008083540402835291602001916104e3565b820191906000526020600020905b8154815290600101906020018083116104c657829003601f168201915b5050505050908060010154905082565b60056020526000908152604090205481565b60025490565b60008054819073ffffffffffffffffffffffffffffffffffffffff16331461053257600080fd5b5050308031905b5090565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60046020528160005260406000208181548110151561057457fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909450925083918301828280156104e35780601f106104b8576101008083540402835291602001916104e3565b3360008181526003602052604080822080546001549251919492029283156108fc02918491818181858888f19350505050158015610621573d6000803e3d6000fd5b505060009055565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610662578054855561069e565b8280016001018555821561069e57600052602060002091601f016020900482015b8281111561069e578254825591600101919060010190610683565b50610539926104239250905b8082111561053957600081556001016106aa5600a165627a7a72305820492d2bb11f94bb40fa3448a0f0b214d05cf588ffbfe59a5222f665872675d4200029405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace",
+    "deployedBytecode": "6080604052600436106100a25763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041662574ae681146100a75780632411ff73146100b45780634b6c1bd1146100db57806353a774e9146101225780635f35cdfb146101b957806367a0b4d0146101e75780638245163b146101fc5780638da5cb5b14610211578063c31872e31461024f578063f997114f14610280575b600080fd5b6100b2600435610295565b005b3480156100c057600080fd5b506100c961040e565b60408051918252519081900360200190f35b3480156100e757600080fd5b5061010973ffffffffffffffffffffffffffffffffffffffff60043516610426565b6040805192835260208301919091528051918290030190f35b34801561012e57600080fd5b5061013a60043561043f565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561017d578181015183820152602001610165565b50505050905090810190601f1680156101aa5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156101c557600080fd5b506100c973ffffffffffffffffffffffffffffffffffffffff600435166104f3565b3480156101f357600080fd5b506100c9610505565b34801561020857600080fd5b506100c961050b565b34801561021d57600080fd5b5061022661053d565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b34801561025b57600080fd5b5061013a73ffffffffffffffffffffffffffffffffffffffff60043516602435610559565b34801561028c57600080fd5b506100b26105df565b6000806002838154811015156102a757fe5b906000526020600020906002020191508160010154341415156102c957600080fd5b503360009081526003602090815260408083208054600501815560018082018054820190556004845291842080548084018083559186529390942085549194938693600291820290920192610331928492869291821615610100026000190190911604610629565b5060019182015490820155336000818152600560209081526040918290208054850190558684015482518181529182018381528854600296811615610100026000190116959095049282018390529294507fc1b8c3c208bbcc7aa38020fcc9c1d03e3b1950d2e9a0d782439ee832a7f593499387926060830190849080156103fa5780601f106103cf576101008083540402835291602001916103fa565b820191906000526020600020905b8154815290600101906020018083116103dd57829003601f168201915b5050935050505060405180910390a2505050565b33600090815260036020526040902054600154025b90565b6003602052600090815260409020805460019091015482565b600280548290811061044d57fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909350918391908301828280156104e35780601f106104b8576101008083540402835291602001916104e3565b820191906000526020600020905b8154815290600101906020018083116104c657829003601f168201915b5050505050908060010154905082565b60056020526000908152604090205481565b60025490565b60008054819073ffffffffffffffffffffffffffffffffffffffff16331461053257600080fd5b5050308031905b5090565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60046020528160005260406000208181548110151561057457fe5b60009182526020918290206002918202018054604080516001831615610100026000190190921693909304601f8101859004850282018501909352828152909450925083918301828280156104e35780601f106104b8576101008083540402835291602001916104e3565b3360008181526003602052604080822080546001549251919492029283156108fc02918491818181858888f19350505050158015610621573d6000803e3d6000fd5b505060009055565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610662578054855561069e565b8280016001018555821561069e57600052602060002091601f016020900482015b8281111561069e578254825591600101919060010190610683565b50610539926104239250905b8082111561053957600081556001016106aa5600a165627a7a72305820492d2bb11f94bb40fa3448a0f0b214d05cf588ffbfe59a5222f665872675d4200029",
+    "sourceMap": "28:1900:0:-;;;253:9;232:30;;554:203;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;576:5:0;:18;;-1:-1:-1;;;;;;576:18:0;584:10;576:18;;;621:27;;;;;;;;;;;;;;;;;;;;;;;640:7;621:27;;;;;;;;606:9;27:10:-1;;576:18:0;23::-1;;45:23;;;606:43:0;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;606:43:0;;;;;;;;;;:::i;:::-;-1:-1:-1;606:43:0;;;;;;;;;;673:27;;;;;;;;;;;;;;;;;;;;;;;692:7;673:27;;;;658:9;27:10:-1;;23:18;;;45:23;;;-1:-1;658:43:0;;;;;;;23:18:-1;;-1:-1;673:27:0;;658:43;;;;-1:-1:-1;;;;;;;;;;;658:43:0;;;;;;;;;;:::i;:::-;-1:-1:-1;658:43:0;;;;;;;;;;725:25;;;;;;;;;;;;;;;;;;;;;;;742:7;725:25;;;;710:9;27:10:-1;;23:18;;;45:23;;;-1:-1;710:41:0;;;;;;;23:18:-1;;-1:-1;725:25:0;;710:41;;;;-1:-1:-1;;;;;;;;;;;710:41:0;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;28:1900;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;28:1900:0;;;-1:-1:-1;28:1900:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+    "deployedSourceMap": "28:1900:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;766:453;;;;;;;;1566:128;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1566:128:0;;;;;;;;;;;;;;;;;;;;303:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;303:41:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;269:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;269:27:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;269:27:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;408:53;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;408:53:0;;;;;;;1225:91;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1225:91:0;;;;1700:147;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1700:147:0;;;;53:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:20:0;;;;;;;;;;;;;;;;;;;;;;;349:54;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;349:54:0;;;;;;;;;1322:238;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1322:238:0;;;;766:453;831:17;932:21;851:9;861:13;851:24;;;;;;;;;;;;;;;;;;;;831:44;;905:8;:15;;;892:9;:28;884:37;;;;;;;;-1:-1:-1;964:10:0;956:19;;;;:7;:19;;;;;;;;984:25;;1008:1;984:25;;;-1:-1:-1;1018:21:0;;;:26;;;;;;1053:16;:28;;;;;27:10:-1;;23:18;;;45:23;;;1053:43:0;;;;;;;;;956:19;;23:18:-1;1053:43:0;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1053:43:0;;;;;;:::i;:::-;-1:-1:-1;1053:43:0;;;;;;;;;1127:10;-1:-1:-1;1105:33:0;;;:21;:33;;;;;;;;;:36;;;;;;1182:15;;;;1152:61;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1152:61:0;;;;;;;;;;;;1127:10;;-1:-1:-1;1152:61:0;;1182:15;;1152:61;;;;1182:15;;1152:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;766:453;;;:::o;1566:128::-;1663:10;1617:4;1655:19;;;:7;:19;;;;;:33;1639:13;;:49;1566:128;;:::o;303:41::-;;;;;;;;;;;;;;;;;;;:::o;269:27::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;269:27:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;269:27:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;408:53::-;;;;;;;;;;;;;:::o;1225:91::-;1294:9;:16;1225:91;:::o;1700:147::-;1759:4;1903:5;;1759:4;;1903:5;;1889:10;:19;1881:28;;;;;;-1:-1:-1;;1799:4:0;1819:22;;;1918:1;1700:147;;:::o;53:20::-;;;;;;:::o;349:54::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;349:54:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;349:54:0;-1:-1:-1;349:54:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1322:238;1401:10;1369:21;1393:19;;;:7;:19;;;;;;1458:20;;1442:13;;1487:34;;1393:19;;1442:36;;;1487:34;;;;;1442:36;;1487:34;1369:21;1487:34;1442:36;1401:10;1487:34;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;;1553:1:0;1530:24;;1322:238::o;28:1900::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;28:1900:0;;;;-1:-1:-1;28:1900:0;;;;;;;;;;;;;;",
+    "sourcePath": "c:/Users/hp/Desktop/Prueba/SmartPymes/contracts/Employee.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.4.24+commit.e67f0147"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/hp/Desktop/Prueba/SmartPymes/contracts/Employee.sol",
+        "exportedSymbols": {
+            "Employee": [
+                220
+            ]
+        },
+        "id": 221,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.4",
+                    ".24"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:24:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 220,
+                "linearizedBaseContracts": [
+                    220
+                ],
+                "name": "Employee",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 3,
+                        "name": "owner",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "53:20:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "53:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "Employee.Worked",
+                        "id": 8,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "name": "loyaltyPoints",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "103:18:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "103:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "name": "totalEmployeds",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 8,
+                                "src": "130:19:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 6,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "130:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Worked",
+                        "nodeType": "StructDefinition",
+                        "scope": 220,
+                        "src": "80:75:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "Employee.Employed",
+                        "id": 13,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 10,
+                                "name": "name",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 13,
+                                "src": "186:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 9,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "186:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 12,
+                                "name": "salary",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 13,
+                                "src": "206:14:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 11,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "206:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Employed",
+                        "nodeType": "StructDefinition",
+                        "scope": 220,
+                        "src": "161:65:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 16,
+                        "name": "etherPerPoint",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "232:30:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 14,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "232:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "302e35",
+                            "id": 15,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "253:9:0",
+                            "subdenomination": "ether",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_500000000000000000_by_1",
+                                "typeString": "int_const 500000000000000000"
+                            },
+                            "value": "0.5"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 19,
+                        "name": "employeds",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "269:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                            "typeString": "struct Employee.Employed[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "contractScope": null,
+                                "id": 17,
+                                "name": "Employed",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 13,
+                                "src": "269:8:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                    "typeString": "struct Employee.Employed"
+                                }
+                            },
+                            "id": 18,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "269:10:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage_ptr",
+                                "typeString": "struct Employee.Employed[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 23,
+                        "name": "workeds",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "303:41:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Worked_$8_storage_$",
+                            "typeString": "mapping(address => struct Employee.Worked)"
+                        },
+                        "typeName": {
+                            "id": 22,
+                            "keyType": {
+                                "id": 20,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "311:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "303:26:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Worked_$8_storage_$",
+                                "typeString": "mapping(address => struct Employee.Worked)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 21,
+                                "name": "Worked",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 8,
+                                "src": "322:6:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                    "typeString": "struct Employee.Worked"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 28,
+                        "name": "workedsEmployeds",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "349:54:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Employed_$13_storage_$dyn_storage_$",
+                            "typeString": "mapping(address => struct Employee.Employed[])"
+                        },
+                        "typeName": {
+                            "id": 27,
+                            "keyType": {
+                                "id": 24,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "357:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "349:30:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Employed_$13_storage_$dyn_storage_$",
+                                "typeString": "mapping(address => struct Employee.Employed[])"
+                            },
+                            "valueType": {
+                                "baseType": {
+                                    "contractScope": null,
+                                    "id": 25,
+                                    "name": "Employed",
+                                    "nodeType": "UserDefinedTypeName",
+                                    "referencedDeclaration": 13,
+                                    "src": "368:8:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                        "typeString": "struct Employee.Employed"
+                                    }
+                                },
+                                "id": 26,
+                                "length": null,
+                                "nodeType": "ArrayTypeName",
+                                "src": "368:10:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage_ptr",
+                                    "typeString": "struct Employee.Employed[]"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 32,
+                        "name": "workedsTotalEmployeds",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 220,
+                        "src": "408:53:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                        },
+                        "typeName": {
+                            "id": 31,
+                            "keyType": {
+                                "id": 29,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "416:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "408:24:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                            },
+                            "valueType": {
+                                "id": 30,
+                                "name": "uint",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "427:4:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "anonymous": false,
+                        "documentation": null,
+                        "id": 40,
+                        "name": "EmployedPurchased",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 39,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 34,
+                                    "indexed": true,
+                                    "name": "worked",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 40,
+                                    "src": "494:22:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 33,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "494:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 36,
+                                    "indexed": false,
+                                    "name": "salary",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 40,
+                                    "src": "518:11:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 35,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "518:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 38,
+                                    "indexed": false,
+                                    "name": "employed",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 40,
+                                    "src": "531:15:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 37,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "531:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "493:54:0"
+                        },
+                        "src": "470:78:0"
+                    },
+                    {
+                        "body": {
+                            "id": 75,
+                            "nodeType": "Block",
+                            "src": "567:190:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 46,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 43,
+                                            "name": "owner",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "576:5:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 44,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 292,
+                                                "src": "584:3:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 45,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "584:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "src": "576:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "id": 47,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "576:18:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "4a6176696572",
+                                                        "id": 52,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "string",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "630:8:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_stringliteral_6cc454b2f467a1216ee602524bbc952d70cc514cebaa2a57d2f7e363a3713113",
+                                                            "typeString": "literal_string \"Javier\""
+                                                        },
+                                                        "value": "Javier"
+                                                    },
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "34",
+                                                        "id": 53,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "640:7:0",
+                                                        "subdenomination": "ether",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_4000000000000000000_by_1",
+                                                            "typeString": "int_const 4000000000000000000"
+                                                        },
+                                                        "value": "4"
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_stringliteral_6cc454b2f467a1216ee602524bbc952d70cc514cebaa2a57d2f7e363a3713113",
+                                                            "typeString": "literal_string \"Javier\""
+                                                        },
+                                                        {
+                                                            "typeIdentifier": "t_rational_4000000000000000000_by_1",
+                                                            "typeString": "int_const 4000000000000000000"
+                                                        }
+                                                    ],
+                                                    "id": 51,
+                                                    "name": "Employed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 13,
+                                                    "src": "621:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_struct$_Employed_$13_storage_ptr_$",
+                                                        "typeString": "type(struct Employee.Employed storage pointer)"
+                                                    }
+                                                },
+                                                "id": 54,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "structConstructorCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "621:27:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 48,
+                                                "name": "employeds",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 19,
+                                                "src": "606:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                    "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                                }
+                                            },
+                                            "id": 50,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "606:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Employed_$13_storage_$returns$_t_uint256_$",
+                                                "typeString": "function (struct Employee.Employed storage ref) returns (uint256)"
+                                            }
+                                        },
+                                        "id": 55,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "606:43:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 56,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "606:43:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "4d696c746f6e",
+                                                        "id": 61,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "string",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "682:8:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_stringliteral_3d5eb9bd711e25d6cb64a0b3f5a39ef6e9b6c8720e6b90a892d0dfa4cf29a646",
+                                                            "typeString": "literal_string \"Milton\""
+                                                        },
+                                                        "value": "Milton"
+                                                    },
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "33",
+                                                        "id": 62,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "692:7:0",
+                                                        "subdenomination": "ether",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                                                            "typeString": "int_const 3000000000000000000"
+                                                        },
+                                                        "value": "3"
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_stringliteral_3d5eb9bd711e25d6cb64a0b3f5a39ef6e9b6c8720e6b90a892d0dfa4cf29a646",
+                                                            "typeString": "literal_string \"Milton\""
+                                                        },
+                                                        {
+                                                            "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                                                            "typeString": "int_const 3000000000000000000"
+                                                        }
+                                                    ],
+                                                    "id": 60,
+                                                    "name": "Employed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 13,
+                                                    "src": "673:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_struct$_Employed_$13_storage_ptr_$",
+                                                        "typeString": "type(struct Employee.Employed storage pointer)"
+                                                    }
+                                                },
+                                                "id": 63,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "structConstructorCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "673:27:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 57,
+                                                "name": "employeds",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 19,
+                                                "src": "658:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                    "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                                }
+                                            },
+                                            "id": 59,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "658:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Employed_$13_storage_$returns$_t_uint256_$",
+                                                "typeString": "function (struct Employee.Employed storage ref) returns (uint256)"
+                                            }
+                                        },
+                                        "id": 64,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "658:43:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 65,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "658:43:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "4a6f7365",
+                                                        "id": 70,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "string",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "734:6:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_stringliteral_7d2736bfbb7e78a46e761557eb3f5e388b30e42ea3be246cd00490819ed4f49b",
+                                                            "typeString": "literal_string \"Jose\""
+                                                        },
+                                                        "value": "Jose"
+                                                    },
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "33",
+                                                        "id": 71,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "742:7:0",
+                                                        "subdenomination": "ether",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                                                            "typeString": "int_const 3000000000000000000"
+                                                        },
+                                                        "value": "3"
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_stringliteral_7d2736bfbb7e78a46e761557eb3f5e388b30e42ea3be246cd00490819ed4f49b",
+                                                            "typeString": "literal_string \"Jose\""
+                                                        },
+                                                        {
+                                                            "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                                                            "typeString": "int_const 3000000000000000000"
+                                                        }
+                                                    ],
+                                                    "id": 69,
+                                                    "name": "Employed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 13,
+                                                    "src": "725:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_struct$_Employed_$13_storage_ptr_$",
+                                                        "typeString": "type(struct Employee.Employed storage pointer)"
+                                                    }
+                                                },
+                                                "id": 72,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "structConstructorCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "725:25:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_memory",
+                                                    "typeString": "struct Employee.Employed memory"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 66,
+                                                "name": "employeds",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 19,
+                                                "src": "710:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                    "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                                }
+                                            },
+                                            "id": 68,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "710:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Employed_$13_storage_$returns$_t_uint256_$",
+                                                "typeString": "function (struct Employee.Employed storage ref) returns (uint256)"
+                                            }
+                                        },
+                                        "id": 73,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "710:41:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 74,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "710:41:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 76,
+                        "implemented": true,
+                        "isConstructor": true,
+                        "isDeclaredConst": false,
+                        "modifiers": [],
+                        "name": "",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 41,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "565:2:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 42,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "567:0:0"
+                        },
+                        "scope": 220,
+                        "src": "554:203:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 137,
+                            "nodeType": "Block",
+                            "src": "822:397:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        82
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 82,
+                                            "name": "employed",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 138,
+                                            "src": "831:17:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                "typeString": "struct Employee.Employed"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 81,
+                                                "name": "Employed",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 13,
+                                                "src": "831:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                    "typeString": "struct Employee.Employed"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 86,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "baseExpression": {
+                                            "argumentTypes": null,
+                                            "id": 83,
+                                            "name": "employeds",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 19,
+                                            "src": "851:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                            }
+                                        },
+                                        "id": 85,
+                                        "indexExpression": {
+                                            "argumentTypes": null,
+                                            "id": 84,
+                                            "name": "employedIndex",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 78,
+                                            "src": "861:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "851:24:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employed_$13_storage",
+                                            "typeString": "struct Employee.Employed storage ref"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "831:44:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                "id": 92,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 88,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 292,
+                                                        "src": "892:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 89,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "value",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "892:9:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 90,
+                                                        "name": "employed",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 82,
+                                                        "src": "905:8:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                            "typeString": "struct Employee.Employed storage pointer"
+                                                        }
+                                                    },
+                                                    "id": 91,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "salary",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 12,
+                                                    "src": "905:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "src": "892:28:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 87,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                295,
+                                                296
+                                            ],
+                                            "referencedDeclaration": 295,
+                                            "src": "884:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 93,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "884:37:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 94,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "884:37:0"
+                                },
+                                {
+                                    "assignments": [
+                                        96
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 96,
+                                            "name": "worked",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 138,
+                                            "src": "932:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "storage",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                "typeString": "struct Employee.Worked"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 95,
+                                                "name": "Worked",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 8,
+                                                "src": "932:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 101,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "baseExpression": {
+                                            "argumentTypes": null,
+                                            "id": 97,
+                                            "name": "workeds",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 23,
+                                            "src": "956:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Worked_$8_storage_$",
+                                                "typeString": "mapping(address => struct Employee.Worked storage ref)"
+                                            }
+                                        },
+                                        "id": 100,
+                                        "indexExpression": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 98,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 292,
+                                                "src": "964:3:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 99,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "964:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "956:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Worked_$8_storage",
+                                            "typeString": "struct Employee.Worked storage ref"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "932:43:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 106,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 102,
+                                                "name": "worked",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 96,
+                                                "src": "984:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked storage pointer"
+                                                }
+                                            },
+                                            "id": 104,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberName": "loyaltyPoints",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 5,
+                                            "src": "984:20:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "hexValue": "35",
+                                            "id": 105,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1008:1:0",
+                                            "subdenomination": null,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_5_by_1",
+                                                "typeString": "int_const 5"
+                                            },
+                                            "value": "5"
+                                        },
+                                        "src": "984:25:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 107,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "984:25:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 112,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 108,
+                                                "name": "worked",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 96,
+                                                "src": "1018:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked storage pointer"
+                                                }
+                                            },
+                                            "id": 110,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberName": "totalEmployeds",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 7,
+                                            "src": "1018:21:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "hexValue": "31",
+                                            "id": 111,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1043:1:0",
+                                            "subdenomination": null,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "1018:26:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 113,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1018:26:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 119,
+                                                "name": "employed",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 82,
+                                                "src": "1087:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                    "typeString": "struct Employee.Employed storage pointer"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                    "typeString": "struct Employee.Employed storage pointer"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "baseExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 114,
+                                                    "name": "workedsEmployeds",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 28,
+                                                    "src": "1053:16:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Employed_$13_storage_$dyn_storage_$",
+                                                        "typeString": "mapping(address => struct Employee.Employed storage ref[] storage ref)"
+                                                    }
+                                                },
+                                                "id": 117,
+                                                "indexExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 115,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 292,
+                                                        "src": "1070:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 116,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "1070:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "1053:28:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                    "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                                }
+                                            },
+                                            "id": 118,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "1053:33:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Employed_$13_storage_$returns$_t_uint256_$",
+                                                "typeString": "function (struct Employee.Employed storage ref) returns (uint256)"
+                                            }
+                                        },
+                                        "id": 120,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1053:43:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 121,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1053:43:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 126,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "UnaryOperation",
+                                        "operator": "++",
+                                        "prefix": false,
+                                        "src": "1105:36:0",
+                                        "subExpression": {
+                                            "argumentTypes": null,
+                                            "baseExpression": {
+                                                "argumentTypes": null,
+                                                "id": 122,
+                                                "name": "workedsTotalEmployeds",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 32,
+                                                "src": "1105:21:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                                    "typeString": "mapping(address => uint256)"
+                                                }
+                                            },
+                                            "id": 125,
+                                            "indexExpression": {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 123,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 292,
+                                                    "src": "1127:3:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 124,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": null,
+                                                "src": "1127:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "1105:33:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 127,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1105:36:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 129,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 292,
+                                                    "src": "1170:3:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 130,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": null,
+                                                "src": "1170:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 131,
+                                                    "name": "employed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 82,
+                                                    "src": "1182:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                        "typeString": "struct Employee.Employed storage pointer"
+                                                    }
+                                                },
+                                                "id": 132,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "salary",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 12,
+                                                "src": "1182:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 133,
+                                                    "name": "employed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 82,
+                                                    "src": "1199:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Employed_$13_storage_ptr",
+                                                        "typeString": "struct Employee.Employed storage pointer"
+                                                    }
+                                                },
+                                                "id": 134,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "name",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 10,
+                                                "src": "1199:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage",
+                                                    "typeString": "string storage ref"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_string_storage",
+                                                    "typeString": "string storage ref"
+                                                }
+                                            ],
+                                            "id": 128,
+                                            "name": "EmployedPurchased",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 40,
+                                            "src": "1152:17:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (address,uint256,string memory)"
+                                            }
+                                        },
+                                        "id": 135,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1152:61:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 136,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1152:61:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 138,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": false,
+                        "modifiers": [],
+                        "name": "buyEmployed",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 79,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 78,
+                                    "name": "employedIndex",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 138,
+                                    "src": "787:18:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 77,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "787:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "786:20:0"
+                        },
+                        "payable": true,
+                        "returnParameters": {
+                            "id": 80,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "822:0:0"
+                        },
+                        "scope": 220,
+                        "src": "766:453:0",
+                        "stateMutability": "payable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 146,
+                            "nodeType": "Block",
+                            "src": "1278:38:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "expression": {
+                                            "argumentTypes": null,
+                                            "id": 143,
+                                            "name": "employeds",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 19,
+                                            "src": "1294:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_struct$_Employed_$13_storage_$dyn_storage",
+                                                "typeString": "struct Employee.Employed storage ref[] storage ref"
+                                            }
+                                        },
+                                        "id": 144,
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "length",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": null,
+                                        "src": "1294:16:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 142,
+                                    "id": 145,
+                                    "nodeType": "Return",
+                                    "src": "1287:23:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 147,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": true,
+                        "modifiers": [],
+                        "name": "totalEmployeds",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 139,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1248:2:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 142,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 141,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 147,
+                                    "src": "1272:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 140,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1272:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1271:6:0"
+                        },
+                        "scope": 220,
+                        "src": "1225:91:0",
+                        "stateMutability": "view",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 178,
+                            "nodeType": "Block",
+                            "src": "1360:200:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        151
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 151,
+                                            "name": "worked",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 179,
+                                            "src": "1369:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "storage",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                "typeString": "struct Employee.Worked"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 150,
+                                                "name": "Worked",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 8,
+                                                "src": "1369:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 156,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "baseExpression": {
+                                            "argumentTypes": null,
+                                            "id": 152,
+                                            "name": "workeds",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 23,
+                                            "src": "1393:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Worked_$8_storage_$",
+                                                "typeString": "mapping(address => struct Employee.Worked storage ref)"
+                                            }
+                                        },
+                                        "id": 155,
+                                        "indexExpression": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 153,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 292,
+                                                "src": "1401:3:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 154,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "1401:10:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "IndexAccess",
+                                        "src": "1393:19:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Worked_$8_storage",
+                                            "typeString": "struct Employee.Worked storage ref"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1369:43:0"
+                                },
+                                {
+                                    "assignments": [
+                                        158
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 158,
+                                            "name": "etherToRefund",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 179,
+                                            "src": "1421:18:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 157,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1421:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 163,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 162,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "argumentTypes": null,
+                                            "id": 159,
+                                            "name": "etherPerPoint",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 16,
+                                            "src": "1442:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "*",
+                                        "rightExpression": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 160,
+                                                "name": "worked",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 151,
+                                                "src": "1458:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked storage pointer"
+                                                }
+                                            },
+                                            "id": 161,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "loyaltyPoints",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 5,
+                                            "src": "1458:20:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1442:36:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1421:57:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 169,
+                                                "name": "etherToRefund",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 158,
+                                                "src": "1507:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 164,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 292,
+                                                    "src": "1487:3:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 167,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": null,
+                                                "src": "1487:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "id": 168,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "transfer",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "1487:19:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                                                "typeString": "function (uint256)"
+                                            }
+                                        },
+                                        "id": 170,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1487:34:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 171,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1487:34:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 176,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 172,
+                                                "name": "worked",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 151,
+                                                "src": "1530:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage_ptr",
+                                                    "typeString": "struct Employee.Worked storage pointer"
+                                                }
+                                            },
+                                            "id": 174,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberName": "loyaltyPoints",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 5,
+                                            "src": "1530:20:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "hexValue": "30",
+                                            "id": 175,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1553:1:0",
+                                            "subdenomination": null,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_0_by_1",
+                                                "typeString": "int_const 0"
+                                            },
+                                            "value": "0"
+                                        },
+                                        "src": "1530:24:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 177,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1530:24:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 179,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": false,
+                        "modifiers": [],
+                        "name": "redeemLoyaltyPoints",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 148,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1350:2:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 149,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1360:0:0"
+                        },
+                        "scope": 220,
+                        "src": "1322:238:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 192,
+                            "nodeType": "Block",
+                            "src": "1623:71:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 190,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "argumentTypes": null,
+                                            "id": 184,
+                                            "name": "etherPerPoint",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 16,
+                                            "src": "1639:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "*",
+                                        "rightExpression": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "baseExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 185,
+                                                    "name": "workeds",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 23,
+                                                    "src": "1655:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Worked_$8_storage_$",
+                                                        "typeString": "mapping(address => struct Employee.Worked storage ref)"
+                                                    }
+                                                },
+                                                "id": 188,
+                                                "indexExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 186,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 292,
+                                                        "src": "1663:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 187,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "1663:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "1655:19:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Worked_$8_storage",
+                                                    "typeString": "struct Employee.Worked storage ref"
+                                                }
+                                            },
+                                            "id": 189,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "loyaltyPoints",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 5,
+                                            "src": "1655:33:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1639:49:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 183,
+                                    "id": 191,
+                                    "nodeType": "Return",
+                                    "src": "1632:56:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 193,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": true,
+                        "modifiers": [],
+                        "name": "getRefundableEther",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 180,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1593:2:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 183,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 182,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 193,
+                                    "src": "1617:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 181,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1617:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1616:6:0"
+                        },
+                        "scope": 220,
+                        "src": "1566:128:0",
+                        "stateMutability": "view",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 207,
+                            "nodeType": "Block",
+                            "src": "1765:82:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        201
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 201,
+                                            "name": "employeAddress",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 208,
+                                            "src": "1774:22:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 200,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1774:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 203,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "id": 202,
+                                        "name": "this",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 305,
+                                        "src": "1799:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Employee_$220",
+                                            "typeString": "contract Employee"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1774:29:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "expression": {
+                                            "argumentTypes": null,
+                                            "id": 204,
+                                            "name": "employeAddress",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 201,
+                                            "src": "1819:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "id": 205,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "balance",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": null,
+                                        "src": "1819:22:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 199,
+                                    "id": 206,
+                                    "nodeType": "Return",
+                                    "src": "1812:29:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 208,
+                        "implemented": true,
+                        "isConstructor": false,
+                        "isDeclaredConst": true,
+                        "modifiers": [
+                            {
+                                "arguments": null,
+                                "id": 196,
+                                "modifierName": {
+                                    "argumentTypes": null,
+                                    "id": 195,
+                                    "name": "isOwner",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 219,
+                                    "src": "1737:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_modifier$__$",
+                                        "typeString": "modifier ()"
+                                    }
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "1737:7:0"
+                            }
+                        ],
+                        "name": "getEmployeeBalance",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 194,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1727:2:0"
+                        },
+                        "payable": false,
+                        "returnParameters": {
+                            "id": 199,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 198,
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 208,
+                                    "src": "1759:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 197,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1759:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1758:6:0"
+                        },
+                        "scope": 220,
+                        "src": "1700:147:0",
+                        "stateMutability": "view",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 218,
+                            "nodeType": "Block",
+                            "src": "1872:53:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "commonType": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "id": 214,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 211,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 292,
+                                                        "src": "1889:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 212,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "1889:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 213,
+                                                    "name": "owner",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 3,
+                                                    "src": "1903:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "1889:19:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 210,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                295,
+                                                296
+                                            ],
+                                            "referencedDeclaration": 295,
+                                            "src": "1881:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 215,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1881:28:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 216,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1881:28:0"
+                                },
+                                {
+                                    "id": 217,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "1918:1:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 219,
+                        "name": "isOwner",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 209,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1869:2:0"
+                        },
+                        "src": "1853:72:0",
+                        "visibility": "internal"
+                    }
+                ],
+                "scope": 221,
+                "src": "28:1900:0"
+            }
+        ],
+        "src": "0:1928:0"
+    },
+    "functionHashes": {
+        "buyEmployed(uint256)": "00574ae6",
+        "employeds(uint256)": "53a774e9",
+        "getEmployeeBalance()": "8245163b",
+        "getRefundableEther()": "2411ff73",
+        "owner()": "8da5cb5b",
+        "redeemLoyaltyPoints()": "f997114f",
+        "totalEmployeds()": "67a0b4d0",
+        "workeds(address)": "4b6c1bd1",
+        "workedsEmployeds(address,uint256)": "c31872e3",
+        "workedsTotalEmployeds(address)": "5f35cdfb"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "354000",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "buyEmployed(uint256)": "infinite",
+            "employeds(uint256)": "infinite",
+            "getEmployeeBalance()": "965",
+            "getRefundableEther()": "683",
+            "owner()": "553",
+            "redeemLoyaltyPoints()": "infinite",
+            "totalEmployeds()": "494",
+            "workeds(address)": "745",
+            "workedsEmployeds(address,uint256)": "infinite",
+            "workedsTotalEmployeds(address)": "550"
+        }
+    }
+}
